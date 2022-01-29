@@ -10,15 +10,7 @@
 using namespace std;
 #define MAX 100000000
 
-void normal(bool *p, int x) {
-
-  for(int i = 2; i * i <= x; i++)
-    if(p[i])
-      for(int j = i * 2; j * j <= x; j += i)
-        p[j] = false;
-}
-
-void segment(bool *p, int min, int max) {
+void algorithm(bool *p, int min, int max) {
   if(min == 1)
     min++;
 
@@ -55,7 +47,7 @@ int main() {
   int start = clock();
 
   for(int i = 0; i < 8 && max <= MAX; i++){
-    tList.push_back(thread(segment, p, min, max));
+    tList.push_back(thread(algorithm, p, min, max));
     min = max + 1;
     max *= 10;
   }
