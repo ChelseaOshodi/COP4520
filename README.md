@@ -12,4 +12,3 @@ To run the program in enter the following on the command line:<br>
 ### Correctness and Efficiency
   I believe my program is correct because the sieve algorithim is well known and because my program provides consistent output on every run. It also computes all the primes in less than 3s, making it pretty efficient,  considering there are 5761455 primes found. 
   
-### Experimental Evaluation
