@@ -26,4 +26,13 @@ The third solution is also superior to solution two because solution two is esse
 With solution three essentially being a queue-based lock, it is the most efficient out of the three provided solutions.
 
 
+# To Run:
+On the command line enter the following commands in order:   <br>
+  -  $ g++ main.cpp crystalVase.cpp labyrinth.cpp -pthread -std=c++11 <br> 
+  -  $ ./a.out <br>
+
+Then Follow the prompts on the screen. <br><br>
+
+
+
 ### [Updated after deadline in order to fix several typos.]
